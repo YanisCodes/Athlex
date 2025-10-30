@@ -12,11 +12,14 @@ html,body{height:100%;margin:0;background:var(--bg);color:#fff;font-family:Inter
 /* Navigation */
 .nav{position:fixed;top:0;left:0;right:0;background:linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.6));backdrop-filter: blur(4px);z-index:1000}
 #nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0;position:relative}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;position:relative}
 .logo{height:56px;width:auto;border-radius:6px;object-fit:contain;filter:drop-shadow(0 6px 18px rgba(0,0,0,0.6))}
 .links{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:22px}
 .links a{color:#fff;text-decoration:none;font-weight:600}
 #nav-toggle{display:none;background:transparent;border:0;color:#fff;font-size:22px}
+
+/* ensure the mobile toggle is visible and not clipped on small screens */
+#nav-toggle{position:relative;z-index:1400;padding:6px 10px;border-radius:6px}
 
 /* Hero */
 .hero{padding-top:100px;padding-bottom:80px;display:flex;align-items:center}
