@@ -1,11 +1,11 @@
 // Small JS for Athlex landing
 document.addEventListener('DOMContentLoaded', ()=>{
-  // nav toggle for small screens
+  // nav toggle for small screens — toggle class for better responsive control
   const toggle = document.getElementById('nav-toggle');
   const links = document.getElementById('nav-links');
   toggle && toggle.addEventListener('click', ()=>{
-    if(links.style.display === 'block') links.style.display = '';
-    else links.style.display = 'block';
+    if(!links) return;
+    links.classList.toggle('open');
   });
 
   // smooth scroll
@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         e.preventDefault();
         const t = document.querySelector(href);
         if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
-        if(window.innerWidth<=800 && links) links.style.display='';
+        // close mobile nav after clicking a link
+        if(window.innerWidth<=800 && links) links.classList.remove('open');
       }
     })
   });
