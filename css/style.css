@@ -46,6 +46,17 @@ h2{font-size:32px;color:var(--accent);margin-bottom:18px}
 .map-embed{margin-top:12px}
 .map-thumb{display:inline-block;padding:12px 18px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);border-radius:8px;text-decoration:none}
 
+/* Social buttons (Instagram & TikTok) */
+.socials{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.social-btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;color:#fff;text-decoration:none;font-weight:700;font-size:15px}
+.social-btn .icon{font-size:18px;color:#fff}
+.social-btn.tiktok .icon{color:#fff;text-shadow:none}
+.social-btn.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);box-shadow:0 8px 24px rgba(245,133,41,0.12)}
+.social-btn.tiktok{background:linear-gradient(45deg,#0f0f0f,#222);box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+.social-btn:hover{transform:translateY(-4px);transition:all .18s ease}
+.social-btn .label{white-space:nowrap}
+
+
 /* Footer */
 .footer{padding:20px 0;border-top:1px solid rgba(255,255,255,0.03);text-align:center;color:var(--muted)}
 
