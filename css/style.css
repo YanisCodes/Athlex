@@ -74,8 +74,8 @@ h2{font-size:32px;color:var(--accent);margin-bottom:18px}
 
 /* Mobile nav: when toggled open, show links as a vertical menu */
 @media(max-width:800px){
-  .links.open{display:flex;position:fixed;top:64px;left:0;right:0;flex-direction:column;align-items:center;gap:14px;padding:16px;background:linear-gradient(180deg, rgba(0,0,0,0.95), rgba(0,0,0,0.9));z-index:1200}
-  .links.open a{font-size:18px;padding:8px 6px}
+  .links.open{display:flex;position:fixed;top:64px;left:0;right:0;width:100vw;box-sizing:border-box;transform:none;flex-direction:column;align-items:center;gap:14px;padding:16px 20px;background:linear-gradient(180deg, rgba(0,0,0,0.95), rgba(0,0,0,0.9));z-index:1200}
+  .links.open a{font-size:18px;padding:12px 6px;display:block;width:100%;text-align:center}
 }
 
 /* contact spacing improvements for mobile */
